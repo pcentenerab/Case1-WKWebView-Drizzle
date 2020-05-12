@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Case1_WKWebView_Drizzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caso 1: WKWebView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b46-ug-7LF">
+                                <rect key="frame" x="40" y="90" width="349" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-ex-Sue">
+                                <rect key="frame" x="136" y="196" width="143" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuS-fW-Var">
+                                <rect key="frame" x="92" y="300" width="30" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="tLy-Da-RKf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="decr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkh-3J-tQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lh5-Gt-6W8">
+                                <rect key="frame" x="297" y="300" width="30" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="incr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqE-fj-qAl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhW-HR-VXd">
+                                <rect key="frame" x="153" y="312" width="108" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3Z-Cg-732"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GhW-HR-VXd" firstAttribute="top" secondItem="WAP-ex-Sue" secondAttribute="bottom" constant="44" id="3FH-7S-Oqa"/>
+                            <constraint firstItem="GhW-HR-VXd" firstAttribute="leading" secondItem="CuS-fW-Var" secondAttribute="trailing" constant="31" id="4BO-xe-TFw"/>
+                            <constraint firstItem="GhW-HR-VXd" firstAttribute="centerY" secondItem="lh5-Gt-6W8" secondAttribute="centerY" id="8OS-NV-Z4X"/>
+                            <constraint firstItem="WAP-ex-Sue" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="9Ic-2f-Fsj"/>
+                            <constraint firstItem="WAP-ex-Sue" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AOP-zG-qNu"/>
+                            <constraint firstItem="CuS-fW-Var" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="Aut-y5-RMt"/>
+                            <constraint firstItem="WAP-ex-Sue" firstAttribute="top" secondItem="b46-ug-7LF" secondAttribute="bottom" constant="59" id="Gom-qV-VRY"/>
+                            <constraint firstItem="b46-ug-7LF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="U4a-yI-eyF"/>
+                            <constraint firstItem="b46-ug-7LF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="V9U-HV-NCe"/>
+                            <constraint firstItem="GhW-HR-VXd" firstAttribute="centerY" secondItem="CuS-fW-Var" secondAttribute="centerY" id="ZAR-iC-llc"/>
+                            <constraint firstItem="CuS-fW-Var" firstAttribute="top" secondItem="WAP-ex-Sue" secondAttribute="bottom" constant="32" id="bMf-dF-DeA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lh5-Gt-6W8" secondAttribute="trailing" constant="87" id="bzg-Qd-m6o"/>
+                            <constraint firstItem="lh5-Gt-6W8" firstAttribute="top" secondItem="WAP-ex-Sue" secondAttribute="bottom" constant="32" id="nbo-oE-hTg"/>
+                            <constraint firstItem="GhW-HR-VXd" firstAttribute="centerX" secondItem="WAP-ex-Sue" secondAttribute="centerX" id="xAG-DF-gJ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="WAP-ex-Sue" id="64c-Th-Uqh"/>
+                        <outlet property="lessButton" destination="CuS-fW-Var" id="12u-KY-lDK"/>
+                        <outlet property="moreButton" destination="lh5-Gt-6W8" id="oN1-Qt-BS9"/>
+                        <outlet property="resetButton" destination="GhW-HR-VXd" id="6HR-HR-sw5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
