@@ -3,8 +3,7 @@ var globalObject;
 function setup() {
     globalObject = {
         drizzle: [],
-        drizzleState: {},
-        account: ''
+        drizzleState: {}
     }
     // let drizzle know what contract we want
     const options = {
